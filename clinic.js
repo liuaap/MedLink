@@ -17,27 +17,29 @@ const doctors = [
 
 const doctorList = document.getElementById("clinicDoctorList");
 
-doctorList.innerHTML = doctors.map(doctor => `
-  <div class="doctor-card">
+if (doctorList) {
+  doctorList.innerHTML = doctors.map(doctor => `
+    <div class="doctor-card">
 
-    <div class="doctor-main">
+      <div class="doctor-main">
 
-      <div class="doctor-avatar">
-        醫
+        <div class="doctor-avatar">
+          醫
+        </div>
+
+        <div>
+          <h3>${doctor.name}</h3>
+          <p>${doctor.specialty}</p>
+        </div>
+
       </div>
 
-      <div>
-        <h3>${doctor.name}</h3>
-        <p>${doctor.specialty}</p>
+      <div class="doctor-meta">
+        <span>${doctor.rating}</span>
+        <span>${doctor.room}</span>
+        <span>${doctor.status}</span>
       </div>
 
     </div>
-
-    <div class="doctor-meta">
-      <span>${doctor.rating}</span>
-      <span>${doctor.room}</span>
-      <span>${doctor.status}</span>
-    </div>
-
-  </div>
-`).join("");
+  `).join("");
+}
