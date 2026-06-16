@@ -1,0 +1,56 @@
+.search-header{
+  display:grid;
+  grid-template-columns:42px 1fr auto;
+  gap:8px;
+  align-items:center;
+}
+
+.back-link{
+  text-decoration:none;
+  font-size:24px;
+  color:#2563eb;
+}
+
+.search-input{
+  height:42px;
+  display:flex;
+  align-items:center;
+  padding:0 14px;
+  background:#fff;
+  border-radius:16px;
+}
+
+.result-summary,
+.insight-card,
+.result-card{
+  margin-top:14px;
+  padding:14px;
+  background:#fff;
+  border-radius:18px;
+}
+
+.filter-chips{
+  display:flex;
+  gap:8px;
+  margin-top:12px;
+}
+
+.chip{
+  padding:6px 12px;
+  border-radius:999px;
+  background:#eef2ff;
+}
+
+.chip.active{
+  background:#2563eb;
+  color:#fff;
+}
+
+.insight-grid{
+  display:grid;
+  gap:8px;
+}
+
+.result-card{
+  margin-top:12px;
+}
