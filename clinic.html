@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>診所頁 | MedLink</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="clinic.css">
+</head>
+
+<body>
+
+<main class="app-shell">
+
+  <header class="clinic-hero">
+
+    <a href="search.html" class="back-link">
+      ←
+    </a>
+
+    <div class="clinic-title-block">
+
+      <p class="eyebrow">
+        MedLink 診所頁
+      </p>
+
+      <h1>
+        晴森牙醫診所
+      </h1>
+
+      <p>
+        牙科｜植牙｜家庭牙醫｜距離 2.4 km
+      </p>
+
+    </div>
+
+  </header>
+
+  <section class="clinic-status-card">
+
+    <div>
+      <strong>今日營業</strong>
+      <span>09:30-20:30</span>
+    </div>
+
+    <div>
+      <strong>目前叫號</strong>
+      <span>A118</span>
+    </div>
+
+    <div>
+      <strong>候診</strong>
+      <span>6 位</span>
+    </div>
+
+  </section>
+
+  <section class="clinic-actions">
+
+    <button class="active">
+      今日看診
+    </button>
+
+    <button>
+      可預約
+    </button>
+
+    <button>
+      診所資訊
+    </button>
+
+  </section>
+
+  <section class="clinic-section">
+
+    <div class="section-head compact">
+      <h2>
+        今日看診進度
+      </h2>
+
+      <button>
+        更新
+      </button>
+    </div>
+
+    <div class="queue-card">
+
+      <div>
+        <p>目前診間</p>
+        <strong>A118</strong>
+      </div>
+
+      <div>
+        <p>前方候診</p>
+        <strong>6 位</strong>
+      </div>
+
+      <div>
+        <p>預估等待</p>
+        <strong>35 分</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="clinic-section">
+
+    <div class="section-head compact">
+      <h2>
+        今日醫師
+      </h2>
+
+      <button>
+        全部
+      </button>
+    </div>
+
+    <div id="clinicDoctorList"></div>
+
+  </section>
+
+  <section class="clinic-section">
+
+    <h2>
+      可預約時段
+    </h2>
+
+    <div class="date-strip">
+
+      <span class="active">今天</span>
+      <span>明天</span>
+      <span>週五</span>
+      <span>週六</span>
+
+    </div>
+
+    <div class="slot-grid">
+
+      <button>14:30</button>
+      <button>15:00</button>
+      <button>16:00</button>
+      <button>17:30</button>
+
+    </div>
+
+  </section>
+
+  <section class="clinic-section info-card">
+
+    <h2>
+      診所資訊
+    </h2>
+
+    <p>
+      台中市西屯區健康路 88 號
+    </p>
+
+    <p>
+      電話：04-1234-5678
+    </p>
+
+    <p>
+      停車：附近 2 分鐘步行停車場
+    </p>
+
+    <button class="cta-btn">
+      導航前往
+    </button>
+
+  </section>
+
+</main>
+
+<script src="clinic.js"></script>
+
+</body>
+</html>
