@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>搜尋結果｜MedLink</title>
+
+  <title>搜尋結果 | MedLink</title>
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="search.css">
 </head>
+
 <body>
 
 <main class="app-shell">
 
+  <!-- 搜尋列 -->
+
   <header class="search-header">
-    <a href="index.html" class="back-link">←</a>
+
+    <a href="index.html" class="back-link">
+      ←
+    </a>
 
     <div class="search-input">
       植牙
@@ -22,9 +29,13 @@
     <button>
       篩選
     </button>
+
   </header>
 
+  <!-- 搜尋統計 -->
+
   <section class="result-summary">
+
     <p class="eyebrow">
       搜尋結果
     </p>
@@ -34,44 +45,124 @@
     </h1>
 
     <p>
-      依距離與評價排序
+      5km內｜依距離、評價、最快可約排序
     </p>
+
   </section>
+
+  <!-- 篩選器 -->
 
   <section class="filter-chips">
-    <span class="chip active">全部</span>
-    <span class="chip">今日可約</span>
-    <span class="chip">價格</span>
-    <span class="chip">材質</span>
-    <span class="chip">設備</span>
+
+    <span class="chip active">
+      全部
+    </span>
+
+    <span class="chip">
+      今日可約
+    </span>
+
+    <span class="chip">
+      價格
+    </span>
+
+    <span class="chip">
+      材質
+    </span>
+
+    <span class="chip">
+      設備
+    </span>
+
+    <span class="chip">
+      女醫師
+    </span>
+
+    <span class="chip">
+      台語
+    </span>
+
+    <span class="chip">
+      高評價
+    </span>
+
   </section>
 
+  <!-- 植牙關鍵資訊 -->
+
   <section class="insight-card">
-    <h2>植牙關鍵資訊</h2>
+
+    <h2>
+      植牙關鍵資訊
+    </h2>
 
     <div class="insight-grid">
+
       <div>
-        <strong>價格</strong>
+        <strong>價格區間</strong>
         <span>6~12萬</span>
       </div>
 
       <div>
-        <strong>材質</strong>
-        <span>鈦金屬</span>
+        <strong>熱門材質</strong>
+        <span>鈦金屬<br>全瓷冠</span>
       </div>
 
       <div>
-        <strong>設備</strong>
-        <span>3D斷層</span>
+        <strong>熱門設備</strong>
+        <span>3D斷層<br>導引手術</span>
       </div>
+
     </div>
+
   </section>
 
-  <section class="section-head">
-    <h2>推薦結果</h2>
+  <!-- 醫師 -->
+
+  <h2 class="result-section-title">
+    最佳匹配醫師
+  </h2>
+
+  <section id="resultList">
   </section>
 
-  <section id="resultList"></section>
+  <!-- 診所 -->
+
+  <h2 class="result-section-title">
+    推薦診所
+  </h2>
+
+  <section id="clinicList">
+
+    <div class="result-card clinic-card">
+
+      <h3>
+        晴森牙醫診所
+      </h3>
+
+      <div class="rating">
+        ⭐ 4.8 (128)
+      </div>
+
+      <div class="card-row">
+        📍 距離 2.4 km
+      </div>
+
+      <div class="card-row">
+        👨‍⚕️ 4位植牙醫師
+      </div>
+
+      <div class="booking-row">
+        🟠 最快可約 今天14:30
+      </div>
+
+      <button class="cta-btn">
+        查看診所
+      </button>
+
+    </div>
+
+  </section>
 
 </main>
 
